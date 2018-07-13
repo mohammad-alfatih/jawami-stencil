@@ -60,6 +60,72 @@ declare global {
   }
 }
 
+
+declare global {
+
+  namespace StencilComponents {
+    interface MyHeader {
+
+    }
+  }
+
+  interface HTMLMyHeaderElement extends StencilComponents.MyHeader, HTMLStencilElement {}
+
+  var HTMLMyHeaderElement: {
+    prototype: HTMLMyHeaderElement;
+    new (): HTMLMyHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'my-header': HTMLMyHeaderElement;
+  }
+  interface ElementTagNameMap {
+    'my-header': HTMLMyHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'my-header': JSXElements.MyHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface MyHeaderAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface MyModal {
+
+    }
+  }
+
+  interface HTMLMyModalElement extends StencilComponents.MyModal, HTMLStencilElement {}
+
+  var HTMLMyModalElement: {
+    prototype: HTMLMyModalElement;
+    new (): HTMLMyModalElement;
+  };
+  interface HTMLElementTagNameMap {
+    'my-modal': HTMLMyModalElement;
+  }
+  interface ElementTagNameMap {
+    'my-modal': HTMLMyModalElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'my-modal': JSXElements.MyModalAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface MyModalAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }
 
 export declare function defineCustomElements(window: any): void;

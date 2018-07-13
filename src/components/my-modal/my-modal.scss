@@ -1,0 +1,12 @@
+my-modal {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 5px solid #ccc;
+  background-color: #dedfde;
+  box-shadow: 1px 3px 3px #aaa;
+  position: fixed;
+  top: 30%;
+  width: 350px;
+  text-align: center;
+  left: calc(50% - 175px);
+  z-index: 1000;
+}
