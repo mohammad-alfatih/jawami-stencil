@@ -12,7 +12,7 @@
   "scripts": {
     "build": "stencil build",
     "serve": "stencil-dev-server",
-    "start": "sd concurrent \"stencil build --dev --watch\" & node index.js",
+    "start": "npm run build && node index.js",
     "test": "jest",
     "test.watch": "jest --watch"
   },
