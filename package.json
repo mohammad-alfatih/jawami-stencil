@@ -14,7 +14,9 @@
     "serve": "stencil-dev-server",
     "start": "npm run build && node index.js",
     "test": "jest",
-    "test.watch": "jest --watch"
+    "test.watch": "jest --watch",
+    "heroku-prebuild": "echo Running empty prebuild command",
+    "heroku-postbuild": "npm start"
   },
   "dependencies": {
     "@stencil/sass": "0.0.5"
