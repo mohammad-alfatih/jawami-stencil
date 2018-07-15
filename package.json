@@ -12,14 +12,14 @@
   "scripts": {
     "build": "stencil build",
     "serve": "stencil-dev-server",
-    "start": "npm run build && node index.js",
+    "start": "npm run build",
     "test": "jest",
     "test.watch": "jest --watch",
     "heroku-prebuild": "echo Running empty prebuild command",
     "heroku-postbuild": "npm start"
   },
   "engines": {
-    "node": "8.9.4",
+    "node": "10.1.0",
     "npm": "5.6.0"
   },
   "dependencies": {
