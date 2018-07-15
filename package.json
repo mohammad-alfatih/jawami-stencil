@@ -15,8 +15,9 @@
     "start": "npm run build",
     "test": "jest",
     "test.watch": "jest --watch",
-    "heroku-prebuild": "echo Running empty prebuild command",
-    "heroku-postbuild": "npm start"
+    "heroku-postbuild": "npm start",
+    "serve:heroku": "http-server www",
+    "prepublish": "stencil build --prod --es5"
   },
   "engines": {
     "node": "10.1.0",
